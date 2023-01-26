@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import About from './page/About';
 import Careers from './page/Careers';
@@ -9,9 +9,9 @@ import Resources from './page/Resources';
 
 function App() {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <ModalSwitch />
-        </BrowserRouter>
+        </HashRouter>
     )
 }
 

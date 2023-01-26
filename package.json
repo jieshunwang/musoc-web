@@ -1,7 +1,7 @@
 {
   "name": "musoc-web",
   "version": "0.1.0",
-  "homepage": "http://jieshunwang.github.io/musoc-web",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "@fontsource/roboto": "^4.5.8",
