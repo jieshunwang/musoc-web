@@ -1,6 +1,7 @@
 {
   "name": "musoc-web",
   "version": "0.1.0",
+  "homepage": "http://jieshunwang.github.io/musoc-web",
   "private": true,
   "dependencies": {
     "@fontsource/roboto": "^4.5.8",
@@ -22,7 +23,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -44,5 +47,8 @@
   },
   "resolutions": {
     "@mui/styled-engine": "npm:@mui/styled-engine-sc@latest"
-  }
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  } 
 }
