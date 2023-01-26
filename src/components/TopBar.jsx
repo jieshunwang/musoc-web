@@ -1,7 +1,6 @@
 import React from "react";
 import { Box } from "@mui/system";
 import { AppBar, Button, IconButton, Toolbar, Typography } from "@mui/material";
-import YouTubeIcon from '@mui/icons-material/YouTube';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 
@@ -44,16 +43,26 @@ const TopBar = () => {
                         </Link>
                     </Box>
                     <Box sx={{ mr: 4 }}>
-                        <IconButton>
-                            <YouTubeIcon color="primary" sx={{ width: 45, height: 45 }}/>
-                        </IconButton>
-                        <IconButton>
+                        <IconButton
+                            target="_blank"
+                            href="https://www.instagram.com/musoc_unsw/"
+                        >
                             <InstagramIcon color="primary" sx={{ width: 45, height: 45 }}/>
                         </IconButton>
-                        <IconButton>
+                        <IconButton
+                            target="_blank"
+                            href="https://www.facebook.com/profile.php?id=100087708972271"
+                        >
                             <FacebookIcon color="primary" sx={{ width: 45, height: 45 }}/>
                         </IconButton>
-                        <Button variant="contained" sx={{ ml: 2, color: 'white' }}>SIGN UP</Button>
+                        <Button
+                            variant="contained"
+                            sx={{ ml: 2, color: 'white' }}
+                            target="_blank"
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSdvf5gUhc56j-ZURbIbQZwefLMhc3y0Hfw_rr6eKT_kgI5mbA/viewform"
+                        >
+                            SIGN UP
+                        </Button>
                     </Box>
                 </Toolbar>
             </AppBar>
